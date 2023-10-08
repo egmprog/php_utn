@@ -1,0 +1,20 @@
+TRABAJO PRÁCTICO FINAL
+
+Utilizando el sitio desarrollado a lo largo del curso:
+
+La aplicación deberá contener (si fueron haciendo los trabajos de cada unidad, la mayoría del contenido ya lo tienen):
+
+Sitio maquetado en HTML5 y CSS3.
+(ver archivos: estilos.css y todos los demás donde se aplican los estilos)
+
+1 funcionalidad que utilice el método GET para enviar datos. Se deben mostrar, al menos 3 datos diferentes, creados con variables.
+(ver archivo: menu.php)
+
+Emplear al menos 1 estructura de control.
+(ver archivo:menu.php)
+
+1 funcionalidad que interactúe con la base de datos, utilizando el método POST (por ejemplo: formulario de registro de usuarios).
+(ver archivo: reservar.php)
+
+Implementar funciones del lenguaje (por ejemplo: mail, funciones de mysqli)
+(ver archivo: reservar.php)
