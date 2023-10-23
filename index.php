@@ -10,10 +10,16 @@
     <div>
         <ul>
             <li>
+                Nivel inicial <br>
                 <a href="./M01AO/index.php">Actividad Opcional Módulo 1 Unidad 4</a><br>
                 <a href="./unidad0201/index.php">Actividad Opcional Módulo 2 Unidad 1</a><br>
                 <a href="./M02U3/reserva.php">Actividad Opcional Módulo 2 Unidad 3</a><br>
                 <a href="./T_Final/index.php">Trabajo final - PHP inicial</a><br>
+            </li>
+            <li>
+                Nivel intemedio <br>
+                <a href="./MI01U2/index.php">Actividad opcional Módulo 1 Unidad 2</a><br>
+                <a href="./MI01U3/index.php">Actividad opcional Módulo 1 Unidad 3</a><br>
             </li>
         </ul>
     </div>

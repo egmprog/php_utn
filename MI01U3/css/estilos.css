@@ -1,0 +1,107 @@
+body{
+    background-color: beige;    
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: #786fa6;
+    border: 1px solid;
+  }
+
+.footer{
+    background-color:bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    
+}
+
+.titulo{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.contenido{
+   background-color: bisque;
+}
+
+.totales{
+    background-color: rgb(238, 196, 255);
+ }
+
+.nav1{
+    background-color: bisque;
+    padding: 8px;
+    border: 1px solid #8b822a;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+} 
+
+.cont1{
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    
+}
+
+.cont2{
+    margin-left: 50px; 
+    margin-right: 50px;   
+    width: 500px;
+    border: 4px #8b822a;
+    border-style: dotted dotted dotted solid;
+    border-radius: 5px;
+    
+    
+}
+
+.cont3{
+    width: 50%;        
+    background-color: aqua;
+}
+
+.cont3_img{
+    width: 300px;
+    height: 200px;
+}
+
+.cont4{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color:antiquewhite; 
+    
+    
+    
+
+}
+
+.p3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p1{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.p2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p5{
+    font-family: Arial, Helvetica, sans-serif;
+}
