@@ -1,0 +1,20 @@
+Actividad Integradora Modulo 1 (obligatoria)
+
+Crear una aplicación web que conecte a PHPMyadmin y  permita:   
+
+- Insertar, mostrar y eliminar registros provenientes de la BD.
+
+- Implementar una funcionalidad con manejo de archivos y de fecha, (por ejemplo, sección de comentarios). 
+
+Se deben recuperar los datos y mostrar los datos ingresados en una nueva página, dando formato HTML.
+
+
+
+Entrega:
+
+- Se debe entregar url del sitio online (p ej. 000webhost).
+
+- Entregar repositorio github o archivos comprimidos en ZIP incluyendo el archivo sql.
+
+- El archivo SQL debe ser nombrado bajo el siguiente formato apellido_nombre.sql.
+
