@@ -1,4 +1,8 @@
-<?php include "./inc/textos.php" ?>
+<?php 
+//include("./inc/textos.php"); 
+
+?>
+
 <div>
     <img src="./img/fachada02.jpg" alt="fachada" width="100%">
 </div>
@@ -7,6 +11,6 @@
 </div>
 <nav class="nav1">    
     <div>
-        <p><a href="home.php">Inicio</a> | <a href="menu.php">Menú del día</a> | <a href="reserva.php">Reserve una mesa</a></p>
+        <p><a href="index.php?vista=home">Inicio</a> | <a href="index.php?vista=menu">Menú del día</a> | <a href="index.php?vista=reserva">Reserve una mesa</a> | <a href="index.php?vista=login">Login administración</a></p>
     </div>
 </nav>

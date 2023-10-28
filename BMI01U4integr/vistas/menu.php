@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <?php include "./inc/head.php" ?>
-</head>
-<body>
-    <?php include "./inc/nav.php" ?>
+
     <div class="cont1">
         <h3 class="p3">Menú del día</h3>
             <ul class="p1">
-                <li><a href="menu.php?sugerencia=1#detalle1">Sugerencias: carnes</a></li>
-                <li><a href="menu.php?sugerencia=2#detalle1">Sugerencias: vegetales</a></li>
-                <li><a href="menu.php?sugerencia=3#detalle1">Sugerencias: pastas</a></li>
+                <li><a href="index.php?vista=menu&sugerencia=1#detalle1">Sugerencias: carnes</a></li>
+                <li><a href="index.php?vista=menu&sugerencia=2#detalle1">Sugerencias: vegetales</a></li>
+                <li><a href="index.php?vista=menu&sugerencia=3#detalle1">Sugerencias: pastas</a></li>
             </ul>
     </div>
     <?php 
@@ -57,7 +51,3 @@
         <h4 class="p4" ><?php echo COMPLEMENTOS ?></h4>
         <?php } ?>
     </div>
-
-    <?php include "./inc/footer.php" ?>
-</body>
-</html>

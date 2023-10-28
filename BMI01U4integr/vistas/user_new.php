@@ -1,6 +1,5 @@
-<?php
-include("./inc/nav.php");
-?>
+<?php include("./inc/navadmin.php");?>
+
 <link rel="stylesheet" href="./css/estilos.css">
 <div class="cont1">
     <h2>Nuevo usuario</h2>

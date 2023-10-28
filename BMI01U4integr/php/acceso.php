@@ -1,6 +1,6 @@
-<link rel="stylesheet" href="./css/estilos.css">
+
 <?php
-include("main.php");
+include("../inc/main.php");
 
 $usuario=limpiar_cadena($_POST['usuario']);
 $clave=limpiar_cadena($_POST['clave']);
@@ -23,7 +23,7 @@ $datos_acceso=mysqli_fetch_assoc($acceder);
         </div>
         ';
         sleep(5);
-        header('Location: principal.php');
+        header('Location: ../index.php?vista=admin');
         exit;
     
     }else{

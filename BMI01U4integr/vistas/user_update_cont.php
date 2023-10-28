@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/estilos.css">
 <?php
-include("./inc/nav.php");
-include ("main.php");
+include "./inc/main.php";
+include "./inc/navadmin.php";
 
 $apellidos=limpiar_cadena($_POST['apellidos']);
 $nombres=limpiar_cadena($_POST['nombres']);

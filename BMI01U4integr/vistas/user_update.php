@@ -1,6 +1,5 @@
 <?php
-include("./inc/nav.php");
-include ("main.php");
+include "./inc/main.php";
 
 //recepción dei id_persona para consultar la BD
 $persona=$_GET['id_persona'];
@@ -17,7 +16,7 @@ $datos_usuario=mysqli_fetch_assoc($conexion1);
     <h2>Modificar usuario</h2>
 </div>
 <div class="cont1">
-    <form action="user_update_cont.php" method="post">
+    <form action="index.php?vista=user_update_cont" method="post">
     <input type="hidden" name="persona" value="<?php echo $persona ?>">
     <label for="apellidos">Apellidos</label><br>
     <input type="text" name="apellidos" value="<?php echo $datos_usuario['usuario_apellidos'] ?>" ><br>

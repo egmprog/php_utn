@@ -1,11 +1,11 @@
 <?php 
-include("main.php");
-include("./inc/nav.php");
+include("./inc/main.php");
+include("./inc/navadmin.php");
 ?>
+<link rel="stylesheet" href="./inc/estilos.css">
 <div class="cont1">
-    <h2 class="p2">Lista de usuarios</h2>
+    <h3 class="p2">Lista de usuarios</h3>
 </div>
-<link rel="stylesheet" href="./css/estilos.css">
 <div class="cont1">
     <table class="cont4">
     <tr>
@@ -14,9 +14,6 @@ include("./inc/nav.php");
         <td>Correo electronico</td>
         <td colspan="2">Opciones</td>
     </tr>
-
-
-
 <?php
 $leer_datos=mysqli_query(conexion(),"SELECT * FROM usuario ORDER BY usuario_id DESC");
 
@@ -25,8 +22,8 @@ $leer_datos=mysqli_query(conexion(),"SELECT * FROM usuario ORDER BY usuario_id D
                 <td><?php echo $mostrar_personas['usuario_id']?></td>
                 <td><?php echo $mostrar_personas['usuario_apellidos'].", ".$mostrar_personas['usuario_nombres']?></td>
                 <td><?php echo $mostrar_personas['usuario_email']?></td>
-                <td><button onclick="document.location='user_update.php?id_persona=<?php echo $mostrar_personas['usuario_id'];?>'">Modificar</button></td>
-                <td><button onclick="document.location='user_delete.php?id_persona=<?php echo $mostrar_personas['usuario_id'];?>'">Eliminar</button></td><br>
+                <td><button onclick="document.location='index.php?vista=user_update&id_persona=<?php echo $mostrar_personas['usuario_id'];?>'">Modificar</button></td>
+                <td><button onclick="document.location='index.php?vista=user_delete&id_persona=<?php echo $mostrar_personas['usuario_id'];?>'">Eliminar</button></td>
             </tr>
             <?php } ?>
 </table>

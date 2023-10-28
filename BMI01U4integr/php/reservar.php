@@ -1,8 +1,5 @@
 <?php
-include "./inc/head.php";
-include "./inc/nav.php";
-include "./inc/textos.php";
-
+include '../inc/textos.php';
 
 //recuperación de datos del formulario
 $apellido=$_POST['apellido'];
@@ -33,16 +30,7 @@ try{
             mail($email,'Reserva en ' . $nombre_principal,"Estimado/a $nombres $apellido,\r\n Hemos reservado una mesa para $cantidad_p personas, para el día $fechaArg a la hora $hora.\r\n ¡Serán bienvenidos!\r\n", $headers);
 
             //confirmación de la reserva
-            echo '
-            <div class="cont1">
-                <h3 class="p3">Su reserva ha sido efectuada con éxito</h3>
-                <p class="p1">Estimado/a '; echo $nombres." ".$apellido." hemos reservado una mesa para ". $cantidad_p." personas, para el día ". $fechaArg." a la hora ".$hora; 
-                echo '</p>
-                <p class="p1">Recibirá un correo electrónico como recordatorio.</p>
-                <br>
-                <p class="p1">Gracias por elegirnos! Los esperamos!</p>
-            </div>
-            ';
+            header("Location: ../index.php?vista=reserva_confirmada&nombres=$nombres&apellidos=$apellidos&fecha=$fechaArg&hora=$hora&cantidad_p=$cantidad_p ");
 
         } else {
             echo'
@@ -62,6 +50,6 @@ try{
     ';
     
 }
-include "./inc/footer.php";
+
 ?>
 
