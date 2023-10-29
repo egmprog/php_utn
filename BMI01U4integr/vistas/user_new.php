@@ -5,7 +5,7 @@
     <h2>Nuevo usuario</h2>
 </div>
 <div class="cont1">
-    <form action="user_create.php" method="post">
+    <form action="./php/user_create.php" method="post">
     <input type="text" name="apellidos" placeholder="apellidos"><br>
     <input type="text" name="nombres" placeholder="nombres"><br>
     <input type="text" name="email" placeholder="email"><br>

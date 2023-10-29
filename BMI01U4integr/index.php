@@ -21,8 +21,8 @@
         include "./inc/footer.php";
     }
 
-    //si la vista está definida y ella no es login, ni 404, ni home --> muestra la vista correspondiente
-    if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "login" && $_GET['vista'] != "404") {
+    //si la vista está definida y ella no es login, ni 404 --> muestra la vista correspondiente
+    if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "login" && $_GET['vista'] != "404"&& $_GET['vista'] != "home") {
         /*
         //cerrar sesion forzadamente como seguridad para usuarios no logeados
         if ((!isset($_SESSION['id']) || $_SESSION['id'] == '') || (!isset($_SESSION['usuario']) || $_SESSION['usuario'] == '')) {
