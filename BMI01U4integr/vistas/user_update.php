@@ -1,5 +1,6 @@
 <?php
 include "./inc/main.php";
+include "./inc/navadmin.php";
 
 //recepción dei id_persona para consultar la BD
 $persona=$_GET['id_persona'];

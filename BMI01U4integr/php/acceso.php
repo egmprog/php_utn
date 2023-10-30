@@ -17,35 +17,20 @@ $datos_acceso=mysqli_fetch_assoc($acceder);
 
     if(isset($datos_acceso['usuario_usuario'])){
     if(password_verify($clave,$datos_acceso['usuario_password'])){
-        echo'
-        <div>
-            <h2>Acceso correcto</h2>
-        </div>
-        ';
-        sleep(5);
+        
         header('Location: ../index.php?vista=admin');
         exit;
     
     }else{
-        echo'
-        <div>
-            <h2>Acceso inválido</h2>
-        </div>    
-        ';
+        header('Location: ../index.php?vista=mje_errorlogin');
+        
         exit;
 
     }}else{
-        echo'
-        <div>
-            <h2>Acceso inválido</h2>
-        </div>    
-        ';
+        header('Location: ../index.php?vista=mje_errorlogin');
+        
         exit;
     }
 }catch(Exception $e){
-    echo'
-    <div>
-        <h2>Acceso inválido</h2>
-    </div>    
-    ';   
+    header('Location: ../index.php?vista=mje_error2');  
 }
