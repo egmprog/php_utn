@@ -9,8 +9,7 @@ try{
 
 $acceder=mysqli_query(conexion(),"SELECT * FROM usuario WHERE usuario_usuario='$usuario' ");
 $datos_acceso=mysqli_fetch_assoc($acceder);
-//echo $datos_acceso['usuario_usuario'];
-//echo $datos_acceso['usuario_password'];
+
 
 
 

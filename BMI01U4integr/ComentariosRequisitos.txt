@@ -3,18 +3,24 @@ Actividad Integradora Modulo 1 (obligatoria)
 Crear una aplicación web que conecte a PHPMyadmin y  permita:   
 
 - Insertar, mostrar y eliminar registros provenientes de la BD.
+        [VER manejo de usuarios, desde login -- utilizar: usuario: ejemplo, pass: ejemplo]
 
 - Implementar una funcionalidad con manejo de archivos y de fecha, (por ejemplo, sección de comentarios). 
+        [VER 'Lista de reservas', dentro del menú de administrador. Se manejan y comparan fechas en diversos formatos]
+        [VER 'Comentarios' en del footer de la página. Se realizan los registros en un archivo txt guardado en la carpata 'docs'. Ese archivo se escribe y se lee para mostrar los comentarios en la web]
 
 Se deben recuperar los datos y mostrar los datos ingresados en una nueva página, dando formato HTML.
+        [VER 'Comentarios' en del footer de la página. Se realizan los registros en un archivo txt guardado en la carpeta 'docs'. Ese archivo se escribe y se lee para mostrar los comentarios en la web]
 
 
 
 Entrega:
 
 - Se debe entregar url del sitio online (p ej. 000webhost).
+        [VER: https://ungifted-compress.000webhostapp.com/    Último trabajo 'Actividad obligatoria Módulo 1']
 
 - Entregar repositorio github o archivos comprimidos en ZIP incluyendo el archivo sql.
+        [VER: https://github.com/egmprog/php_utn/tree/main/BMI01U4integr]
 
 - El archivo SQL debe ser nombrado bajo el siguiente formato apellido_nombre.sql.
 
