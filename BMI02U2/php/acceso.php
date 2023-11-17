@@ -1,10 +1,16 @@
 <?php
+session_start();
 include("../inc/main.php");
+
 
 $usuario=limpiar_cadena($_POST['usuario']);
 $clave=limpiar_cadena($_POST['clave']);
+$codigo_captcha=limpiar_cadena($_POST['codigo_captcha']);
 
 try{
+if($codigo_captcha!=$_SESSION['$codigo_captcha']){
+echo "Captcha incorrecto";
+}
 
 $acceder=mysqli_query(conexion(),"SELECT * FROM usuario WHERE usuario_usuario='$usuario' ");
 $datos_acceso=mysqli_fetch_assoc($acceder);
