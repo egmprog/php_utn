@@ -16,7 +16,12 @@ $simbolo=array('%','@','!','-','#');
 $mezcla_letras=rand(0,5);
 $mezcla_simbolos=rand(0,4);
 
-$_SESSION['codigo_captcha']= $n1.$letra[$mezcla_letras].$n2.$simbolo[$mezcla_simbolos].$n3
+$_SESSION['codigo_captcha']= $n1.$letra[$mezcla_letras].$n2.$simbolo[$mezcla_simbolos].$n3;
+
+if(isset($_SESSION['usuario'])){
+    header('Location:./index.php?vista=admin');
+    exit;
+}
 
 ?>
 

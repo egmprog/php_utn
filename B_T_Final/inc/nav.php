@@ -11,6 +11,15 @@
 </div>
 <nav class="nav1">    
     <div>
-        <p><a href="index.php?vista=home">Inicio</a> | <a href="index.php?vista=menu">Menú del día</a> | <a href="index.php?vista=reserva">Reserve una mesa</a> | <a href="index.php?vista=login">Login administración</a></p>
+        <p><a href="index.php?vista=home">Inicio</a> | <a href="index.php?vista=menu">Menú del día</a> | <a href="index.php?vista=reserva">Reserve una mesa</a> | 
+                
+        <?php
+        if(isset($_SESSION['usuario'])){
+            echo '<a href="index.php?vista=login">Administración</a></p>';    
+        }else{
+            echo'<a href="index.php?vista=login">Login administración</a></p>';
+        }
+        ?>
+        
     </div>
 </nav>

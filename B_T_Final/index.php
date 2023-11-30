@@ -21,15 +21,19 @@ session_start();
     }
 
     //si la vista está definida y ella no es login, ni 404 --> muestra la vista correspondiente
-    if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "login" && $_GET['vista'] != "404") {
+    if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "login" && $_GET['vista'] != "404" ) {
         
 
-        //cerrar sesion forzadamente como seguridad para usuarios no logeados
-        if ((!isset($_SESSION['usuario']) || $_SESSION['usuario'] == '')) {
-            include "./inc/nav.php";
-            include "./vistas/logout.php";
-            include "./inc/footer.php";
-            exit();
+        //cerrar sesion forzadamente como seguridad para usuarios no logeados (excepto para las páginas: home, menu y reserva)
+        if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "menu" && $_GET['vista'] != "reserva" && $_GET['vista'] != "home" ) {
+
+
+                if ((!isset($_SESSION['usuario']) || $_SESSION['usuario'] == '')) {
+                    include "./inc/nav.php";
+                    include "./vistas/home.php";
+                    include "./inc/footer.php";
+                    exit();
+                }
         }
 
 

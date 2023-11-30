@@ -1,26 +1,44 @@
-Actividad Integradora Modulo 1 (obligatoria)
 
-Crear una aplicación web que conecte a PHPMyadmin y  permita:   
+Tarea
+Trabajo Práctico Final PHP INTERMEDIO
 
-- Insertar, mostrar y eliminar registros provenientes de la BD.
-        [VER manejo de usuarios, desde 'Login administracion' -- utilizar: usuario: ejemplo, pass: ejemplo]
+Consigna
+Desarrollar un sistema de administración de acuerdo a la temática elegida.
+Los nombres de los archivos que se presentan a continuación son a modo de ejemplo, su denominación podrá adecuarse al proyecto desarrollado.
 
-- Implementar una funcionalidad con manejo de archivos y de fecha, (por ejemplo, sección de comentarios). 
-        [VER 'Lista de reservas', dentro del menú de administrador. Se manejan y comparan fechas en diversos formatos]
-        [VER 'Comentarios' en del footer de la página. Se realizan los registros en un archivo txt guardado en la carpata 'docs'. Ese archivo se escribe y se lee para mostrar los comentarios en la web]
+El archivo mostrar_contenido.php 
+El archivo mostrar_contenido.php deberá contener una botonera que permita realizar, finalizar y ver pedidos (registros, o la que corresponda con la temática seleccionada).
+Las opciones serán “Realizar pedido”, “Ver pedidos”, “Finalizar pedidos”.
 
-Se deben recuperar los datos y mostrar los datos ingresados en una nueva página, dando formato HTML.
-        [VER 'Comentarios' en del footer de la página. Se realizan los registros en un archivo txt guardado en la carpeta 'docs'. Ese archivo se escribe y se lee para mostrar los comentarios en la web]
+En el archivo realizar_pedidos.php
+Desarrollar un formulario que permita realizar, (cargar) un pedido. El mismo deberá tener al menos 4 ítems y deberá incluir una imagen.
+Estos datos se enviarán al archivo cargar_pedido.php que deberá verificar los datos y cargados a una tabla. La tabla tendrá una opción de “estado” en donde inicialmente se cargara como “procesando”.
+
+En el archivo verpedidos.php:
+Se deberán mostrar los pedidos realizados pendientes de entrega.
+Cada pedido tendrá una opción de finalizar. Esta acción modificará el valor del campo “procesando” a finalizado.
+
+En el archivo finalizarpedidos.php:
+Se deberán listar los pedidos finalizados.
+
+Para acceder a todas las secciones se debe ingresar como cliente (verificar sesión).
+
+Manejo de archivos
+Incluir funciones de manejo de archivos y/o imágenes. Aclarar en donde fueron empleadas. 
+
+Forma de entrega: 
+URL al sitio online y funcional del servidor habiendo habilitado al siguiente usuario: 
+
+Usuario: admin / 20123456
+Password: admin123
+
+También se deberá entregar una carpeta comprimida con todos los archivos necesarios para verificar lo solicitado,  comprimidos en zip, NO olvidar el archivo sql con la tabla. 
+
+Datos de conexión: (“localhost”, “root”, “phpintermedio”)
 
 
 
-Entrega:
 
-- Se debe entregar url del sitio online (p ej. 000webhost).
-        [VER: https://ungifted-compress.000webhostapp.com/    Último trabajo 'Actividad obligatoria Módulo 1']
+Fecha de entrega: 6/12
 
-- Entregar repositorio github o archivos comprimidos en ZIP incluyendo el archivo sql.
-        [VER: https://github.com/egmprog/php_utn/tree/main/BMI01U4integr]
-
-- El archivo SQL debe ser nombrado bajo el siguiente formato apellido_nombre.sql.
-
+Fecha de recuperatorio: 13/12

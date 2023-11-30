@@ -11,31 +11,40 @@ $size_img=$_FILES['image']['size'];
 $type_img=$_FILES['image']['type'];
 $tmp_img=$_FILES['image']['tmp_name'];
 
-//$ubic_img='../img/'.$nombre_img;
+$ubic_img='../img/'.$nombre_img;
+$ubic_img_lectura='./img/'.$nombre_img;
 
-if(($type_img!='image/jpeg')&&($type_img!='image/jpg')&&($type_img!='image/png')||($size_img)>20000000000){
+if(($type_img!='image/jpeg')&&($type_img!='image/jpg')&&($type_img!='image/png')||($size_img)>2000000){
     header('Location: ../index.php?vista=mje_error4img');
     exit;
 }else{
-    /*
-    move_uploaded_file($tmp_img, $ubic_img);
-    // Crear una imagen desde el archivo temporal
-    $imagen_origen = imagecreatefromstring(file_get_contents($ubic_img));
 
-    // Crear una nueva imagen con las dimensiones deseadas
-    $imagen_destino = imagecreatetruecolor(260, 200);
+    $original=imagecreatefrompng($tmp_img);
 
-    // Copiar y redimensionar la imagen original a la nueva imagen
-    imagecopyresampled($imagen_destino, $imagen_origen, 0, 0, 0, 0, 260, 200, imagesx($imagen_origen), imagesy($imagen_origen));
+    //obtener las dimensiones (ancho y alto) original
+    $ancho_original=imagesx($original);
+    $alto_original=imagesy($original);
 
-    // Obtener el contenido de la nueva imagen en formato JPEG (puedes ajustar según el formato que prefieras)
-    ob_start();
-    imagejpeg($imagen_destino);
-    $imagen_contenido = ob_get_clean();
-*/
+    //crar un lienzo vacío
+    $ancho_nuevo=200;
+    $alto_nuevo=150;
+    //$alto_nuevo=round($ancho_nuevo*$alto_original/$ancho_original);
+
+    //crear nueva imagen
+    $copia=imagecreatetruecolor($ancho_nuevo,$alto_nuevo);
+
+    //copiar y redimensionar la imagen original en la nueva imagen
+    imagecopyresampled($copia,$original,0,0,0,0,$ancho_nuevo,$alto_nuevo,$ancho_original,$alto_original);
+
+    //exportar y guardar la imagen
+    $guardar=imagejpeg($copia,"../img/$nombre_img",100);
+
+    //liberar memoria
+    imagedestroy($original);
+    imagedestroy($copia);
    
     //conexion BD mediante la función definida en main.php        
-    mysqli_query(conexion(), "INSERT INTO menu VALUES (DEFAULT, '$menu_p_ppal','$menu_ingred','$menu_precio','$tmp_img','$menu_estado') ");
+    mysqli_query(conexion(), "INSERT INTO menu VALUES (DEFAULT, '$menu_p_ppal','$menu_ingred','$menu_precio','$ubic_img_lectura','$menu_estado') ");
     mysqli_close(conexion());
     header('Location: ../index.php?vista=carga_correcta');
     exit;
