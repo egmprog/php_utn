@@ -7,7 +7,7 @@ $menu_precio = limpiar_cadena($_POST['menu_precio']);
 $menu_estado = limpiar_cadena($_POST['menu_estado']);
 $menu_id_ed = limpiar_cadena($_POST['menu_id']);
 
-$ubic_img_lectura = '';
+//$ubic_img_lectura = '';
 if (($_FILES['image']['size'])>0) {
 
     $nombre_img = $_FILES['image']['name'];
@@ -50,11 +50,68 @@ if (($_FILES['image']['size'])>0) {
     }
 exit;
 }
+
+    //conexion BD mediante la función definida en main.php
+    //y actualización del campo menu_p_ppal
+    if(isset($menu_p_ppal)){
+        mysqli_query(conexion(), "UPDATE menu SET menu_p_ppal='$menu_p_ppal' WHERE menu_id='$menu_id_ed' ");
+        //mysqli_close(conexion());
+        //header('Location: ../index.php?vista=carga_correcta');
+        
+        }
+
+    //conexion BD mediante la función definida en main.php
+    //y actualización del campo menu_ingred
+    if(isset($menu_ingred)){
+        mysqli_query(conexion(), "UPDATE menu SET menu_ingred='$menu_ingred' WHERE menu_id='$menu_id_ed' ");
+        //mysqli_close(conexion());
+        //header('Location: ../index.php?vista=carga_correcta');
+        
+        }
+
+    //conexion BD mediante la función definida en main.php
+    //y actualización del campo menu_precio
+    if(isset($menu_precio)){
+        mysqli_query(conexion(), "UPDATE menu SET menu_precio='$menu_precio' WHERE menu_id='$menu_id_ed' ");
+        //mysqli_close(conexion());
+        //header('Location: ../index.php?vista=carga_correcta');
+        
+        }
+
+    //conexion BD mediante la función definida en main.php
+    //y actualización del campo menu_ingred
+    if(isset($ubic_img_lectura)){
+        mysqli_query(conexion(), "UPDATE menu SET menu_img='$ubic_img_lectura' WHERE menu_id='$menu_id_ed' ");
+        //mysqli_close(conexion());
+        //header('Location: ../index.php?vista=carga_correcta');
+        
+        }
+
+    //conexion BD mediante la función definida en main.php
+    //y actualización del campo menu_estado
+    if(isset($menu_estado)){
+        mysqli_query(conexion(), "UPDATE menu SET menu_estado='$menu_estado' WHERE menu_id='$menu_id_ed' ");
+        //mysqli_close(conexion());
+        //header('Location: ../index.php?vista=carga_correcta');
+        
+        }
+
+    //cierre del proceso de actualización
+    if(isset($menu_p_ppal)||isset($menu_ingred)||isset($menu_precio)||isset($ubic_img_lectura)||isset($menu_estado)){
+        mysqli_close(conexion());
+        header('Location: ../index.php?vista=carga_correcta');        
+    }else{
+        header('Location: ../index.php?vista=menu_list');
+    }
+
+    /*
     //conexion BD mediante la función definida en main.php        
     mysqli_query(conexion(), "UPDATE menu SET (menu_p_ppal='$menu_p_ppal',menu_ingred='$menu_ingred',menu_precio='$menu_precio',menu_img='$ubic_img_lectura',menu_estado='$menu_estado') WHERE menu_id='$menu_id_ed' ");
     mysqli_close(conexion());
     header('Location: ../index.php?vista=carga_correcta');
     exit;
+    
+    
     
     // Actualizar datos
     $actualizar_datos=conexion();
@@ -68,3 +125,4 @@ exit;
         ":estado"=>$menu_estado,
         ":id"=>$menu_id_ed,
     ];
+    */

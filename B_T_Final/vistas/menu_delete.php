@@ -17,7 +17,7 @@ $mostrar_menu=mysqli_fetch_assoc($revisar);
 </div>
 
 <div class="cont1">
-    <form action="./php/menu_actualizar.php" method="post" enctype="multipart/form-data"><br>
+    <form action="./php/menu_borrar.php" method="post" enctype="multipart/form-data"><br>
         <input type="hidden" name="menu_id" value="<?php echo $menu_id_ed ?>">
         <label for="menu_p_ppal">Ingrese el nombre del plato principal</label><br>
         <input type="text" name="menu_p_ppal" style="width: 300px;" value="<?php echo $mostrar_menu['menu_p_ppal']?>"><br>
@@ -26,22 +26,15 @@ $mostrar_menu=mysqli_fetch_assoc($revisar);
         <label for="menu_precio">Ingrese el precio del plato</label><br>
         <input type="text" name="menu_precio" value="<?php echo $mostrar_menu['menu_precio']?>"><br>
         <label for="menu_img">Suba una imagen del plato principal</label><br>
-        <input type="file" name="image" value="<?php echo $mostrar_menu['menu_img']?>" ><br><br>
-        <label for="menu_img">El estado actual de la publicación es:</label>
+        
+        <img id="menu_img" src="<?php echo $mostrar_menu['menu_img']?>" alt="Imagen" style="max-width: 100%;"><br><br>
+        
+        
+        <label for="menu_estado">El estado actual de la publicación es:</label>
         <label for=""><strong><?php echo $mostrar_menu['menu_estado']?></strong></label><br><br>
-        <label for="">Puede modificarlo cambiando la seleccion</label><br>
-        <select id="menu_estado" name="menu_estado" >
-                <option value="<?php echo $mostrar_menu['menu_estado']?>"><?php echo $mostrar_menu['menu_estado']?></option>
-                <option 
-                <?php 
-                if($mostrar_menu['menu_estado']=="Borrador"){ ?>
-                    value="Publicado" >Publicado</option>
-                <?php  }
-                if($mostrar_menu['menu_estado']=="Publicado"){ ?>
-                    value="Borrador" >Borrador</option>
-                <?php  } ?>                
-        </select><br><br>
-        <input type="submit" value="Actualizar"><br>
+        
+        <label for=""><strong>¿Está seguro que desea eliminar esta información?</strong></label><br>
+        <input type="submit" value="Borrar definitivamente"><br>
 
     </form>
 </div>

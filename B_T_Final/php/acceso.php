@@ -10,7 +10,7 @@ $codigo_captcha=($_POST['captcha']);
 $mensaje_error = "";
 try{
 if($codigo_captcha!=$_SESSION['codigo_captcha']){
-    header('Location: ../index.php?vista=mje_error3');
+    header('Location: ../index.php?vista=mje_errorlogin');
 exit;
 }
 

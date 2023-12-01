@@ -5,7 +5,7 @@ session_start();
 <html lang="es">
 
 <head>
-    <?php include "./inc/head.php"; ?>
+    <?php include "./inc/head.php";?>
 </head>
 
 <body>
@@ -24,8 +24,8 @@ session_start();
     if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "login" && $_GET['vista'] != "404" ) {
         
 
-        //cerrar sesion forzadamente como seguridad para usuarios no logeados (excepto para las páginas: home, menu y reserva)
-        if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "menu" && $_GET['vista'] != "reserva" && $_GET['vista'] != "home" ) {
+        //cerrar sesion forzadamente como seguridad para usuarios no logeados (excepto para las páginas: home, menu, ver comentarios, confirmacion de reserva y reserva)
+        if (is_file("./vistas/" . $_GET['vista'] . ".php") && $_GET['vista'] != "menu" && $_GET['vista'] != "reserva" && $_GET['vista'] != "home" && $_GET['vista'] != "coment_ver" && $_GET['vista'] != "reserva_confirmada" && $_GET['vista'] != "comentario" && $_GET['vista'] != "coment_ok" && $_GET['vista'] != "mje_errorlogin") {
 
 
                 if ((!isset($_SESSION['usuario']) || $_SESSION['usuario'] == '')) {
