@@ -44,6 +44,7 @@ function limpiar_cadena($cadena){
      $cadena=stripslashes($cadena);
      return $cadena;
  }
+<<<<<<< HEAD
 
  // Traducción de días de la semana
  function traducirDia($fecha) {
@@ -55,3 +56,5 @@ function limpiar_cadena($cadena){
     if($fecha=='Saturday'){echo 'Sábado';}
     if($fecha=='Sunday'){echo 'Domingo';}
 }
+=======
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a

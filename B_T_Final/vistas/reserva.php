@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php 
 include "./inc/main.php";
 
@@ -134,6 +135,13 @@ include "./inc/main.php";
 
 
     <!--
+=======
+
+
+    <div class="cont1">
+    <p class="p1">Por favor, complete la solicitud de su reserva aquí:</p>
+    </div>
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a
     <div class="cont1">
     <form action="./php/reservar.php" method="post" class="p1">
     <input type="text" name="apellidos" placeholder="Apellidos"><br>    
@@ -156,4 +164,7 @@ include "./inc/main.php";
              
     </form>
     </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a

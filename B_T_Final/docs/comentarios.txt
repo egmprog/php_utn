@@ -1,3 +1,9 @@
 
 Valoración: <span style="font-size: 24px; color: red;">*****</span> - Muy buena atención - 05-11-2023
+<<<<<<< HEAD
 Valoración: <span style="font-size: 24px; color: red;">****</span> - Muy variado menú - 05-11-2023
+=======
+Valoración: <span style="font-size: 24px; color: red;">****</span> - Muy variado menú - 05-11-2023
+Valoración: <span style="font-size: 24px; color: red;">****</span> - Muy agradable el lugar - 01-12-2023
+Valoración: <span style="font-size: 24px; color: red;">*****</span> - Platos muy bien elaborados - 01-12-2023
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a

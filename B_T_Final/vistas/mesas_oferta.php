@@ -7,6 +7,7 @@ include("./inc/navadmin.php");
 </div>
 <div class="cont1">
     <form action="./php/mesas_ofert.php" method="post">
+<<<<<<< HEAD
         <label for=""></label>Nombre (o número) de la mesa<br>
         <input type="text" name="mesa_nombre" placeholder="Asignar un nombre o número"><br>
 
@@ -47,6 +48,10 @@ include("./inc/navadmin.php");
         <label for="">Hora de finalización</label><br>
         <input type="time" name="mesa_h_fin"><br><br>
 
+=======
+        <input type="int" name="cant_mesas" placeholder="Cantidad de mesas con...">
+        <input type="int" name="cant_sillas" placeholder="cantidad de sillas">
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a
         <button name="submit">Cargar</button>
 
     </form>

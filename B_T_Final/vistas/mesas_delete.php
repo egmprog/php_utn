@@ -22,7 +22,11 @@ $datos_mesa=mysqli_fetch_assoc($conexion);
 
 <?php
 if(!isset($_POST['aceptar'])){
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a
 }else{
     
     if($_POST['aceptar']=="borrar_registro"){

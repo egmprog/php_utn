@@ -1,6 +1,7 @@
 <?php
 include "../inc/main.php";
 
+<<<<<<< HEAD
 $mesa_nombre=$_POST['mesa_nombre'];
 $mesa_descrip=$_POST['mesa_descrip'];
 $lunes=$_POST['lunes'];
@@ -23,5 +24,11 @@ echo '
     <h3>Datos de las mesas cargados correctamente</h3>
 </div>
 ';
+=======
+$mesas=$_POST['cant_mesas'];
+$sillas=$_POST['cant_sillas'];
+
+$cupo=mysqli_query(conexion(), "INSERT INTO mesas SET cant_mesas='$mesas',cant_sillas='$sillas' ");
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a
 
 header('Location: ../index.php?vista=mesas_list');

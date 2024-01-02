@@ -1,6 +1,10 @@
 body{
     background-color: beige;    
     font-family:Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
+=======
+    box-sizing: border-box;
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a
 }
 
 th, td {
@@ -75,10 +79,38 @@ th, td {
     margin-left: 50px;
     margin-right: 50px;
     background-color:antiquewhite; 
+<<<<<<< HEAD
     
     
     
 
+=======
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.imagen {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+>>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a
 }
 
 .p3{
