@@ -22,16 +22,13 @@
                 <a href="./BMI01U3/index.php">Actividad opcional Módulo 1 Unidad 3</a><br>
                 <a href="./BMI01U4integr/index.php">Actividad obligatoria Módulo 1</a><br>
                 <a href="./BMI02U2/index.php">Actividad opcional Módulo 2 Unidad 2</a><br>
-<<<<<<< HEAD
                 <a href="./B_T_Final/index.php">Trabajo final - PHP intermedio</a><br>
             </li>
             <li>
                 Nivel avanzado <br>
-                <a href="./CM1U3/index.php">Actividad opcional Módulo 1 Unidad 3</a><br>
+                <a href="./CM1U4/index.php">Actividad obligatoria Módulo 1</a><br>                
                 
-=======
-                <a href="./B_T_Final/index.php">Trabajo Final - PHP Intermedio</a><br>
->>>>>>> d0009cda515eabe22f90f1ff917394b39a79285a
+
             </li>
         </ul>
     </div>
