@@ -1,4 +1,7 @@
-
+<div class="cont1">
+<h3 class="p3">Opciones de menú</h3>
+</div>
+    <!--
     <div class="cont1">
         <h3 class="p3">Menú del día</h3>
             <ul class="p1">
@@ -51,3 +54,4 @@
         <h4 class="p4" ><?php echo COMPLEMENTOS ?></h4>
         <?php } ?>
     </div>
+        -->
