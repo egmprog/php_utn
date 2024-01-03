@@ -1,0 +1,33 @@
+Actividad Integradora Modulo 1 (obligatoria)
+Empleando el patrón de diseño MVC estructurar las vistas de tu proyecto.
+
+
+La aplicación debe contar con un mínimo de 3 secciones de contenido, una de las cuales será la página inicial de nuestro sitio, las restantes deben estar relacionadas con el tema escogido.
+VER EN: /views/contents/ ...
+ARCHIVOS: admin.php; home.php; login.php; menu.php; reserva.php
+PÁGINA INICIAL: home.php (redireccionada desde index.php)
+
+Debe incluir una página 404.
+VER EN: /views/contents/ ...
+ARCHIVO:  404.php
+
+Crear los controladores y vistas necesarias.
+VER EN: /controllers/
+ARCHIVO:  viewsController.php
+
+Emplear variables GET para enviar información entre archivos.
+VARIBLES UTILIZADAS:  
+vista=home; vista=menu; vista=reserva; vista=login; 
+
+Forma de entrega:
+
+URL al sitio online y funcional en servidor.
+https://ungifted-compress.000webhostapp.com/
+
+Incluir todos los archivos necesarios comprimidos en zip o repositorio github o similar.
+https://github.com/egmprog/php_utn/tree/main/CM1U4 
+
+
+
+Fecha de entrega: 10/1
+Fecha recuperatorio: 17/1
